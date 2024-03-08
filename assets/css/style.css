@@ -1,0 +1,685 @@
+header {
+  background-color: orange;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Aligns items to the start and end of the header */
+  align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-text {
+    font-size: 18px; /* Adjust the font size as needed */
+    color: white;
+    margin-bottom: 5px; /* Adjust as needed */
+    font-weight: normal; /* Set font weight to normal */
+    display: flex; /* Add display flex */
+    align-items: center; /* Align text vertically */
+    justify-content: center; /* Align text horizontally */
+}
+
+
+.login-btn {
+  margin-left: auto; /* Pushes the login button to the right */
+}
+
+.login-btn button {
+  background-color: white;
+  color: orange;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+nav {
+  background-color: #f0f0f0;;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 18px;
+}
+
+html,body {
+	height: 100%;
+}
+
+body.my-login-page {
+	background-color: #f7f9fb;
+	font-size: 14px;
+}
+
+.my-login-page .brand {
+	width: 90px;
+	height: 90px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 40px auto;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+	position: relative;
+	z-index: 1;
+}
+
+.my-login-page .brand img {
+	width: 100%;
+}
+
+.my-login-page .card-wrapper {
+	width: 400px;
+}
+
+.my-login-page .card {
+	border-color: transparent;
+	box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+
+.my-login-page .card.fat {
+	padding: 10px;
+}
+
+.my-login-page .card .card-title {
+	margin-bottom: 30px;
+}
+
+.my-login-page .form-control {
+	border-width: 2.3px;
+}
+
+.my-login-page .form-group label {
+	width: 100%;
+}
+
+.my-login-page .btn.btn-block {
+	padding: 12px 10px;
+}
+
+.my-login-page .footer {
+	margin: 40px 0;
+	color: #888;
+	text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+	.my-login-page .card-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.my-login-page .card.fat {
+		padding: 0;
+	}
+
+	.my-login-page .card.fat .card-body {
+		padding: 15px;
+	}
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center; /* Align items to the center */
+    align-items: center;
+}
+
+.nav-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between list items */
+}
+
+.nav-container ul li:first-child a {
+    margin-left: auto; /* Move "Home" link to the end */
+}
+
+.nav-container ul li:first-child {
+    margin-left: 0; /* Remove left margin from the first list item */
+}
+
+.nav-container ul li:last-child {
+    margin-right: 0; /* Remove right margin from the last list item */
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 18px;
+}
+
+.main-section {
+    background-image: url('../img/jobs.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-content {
+    max-width: 600px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.contact-btn, .jobs-btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.logo-container {
+	margin-right: 150px;
+    flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+.main-container {
+  display: flex;
+  justify-content: flex-end; /* Align sections to the right */
+}
+
+.additional-section {
+  padding: 50px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/color.jpeg);
+}
+
+.additional-section .section-content h2 {
+  font-weight: bold;
+}
+
+.additional-section .section-content p {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #888;
+  margin-top: 10px; /* Add some space between the paragraphs */
+}
+
+.additional-section .button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+  gap: 10px; /* Add space between buttons */
+}
+
+.additional-section .button-grid button {
+  width: 450px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #C0C0C0;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to the buttons */
+}
+
+.additional-section .button-grid button:hover {
+  background-color: orange;
+}
+
+.additional-section .button-grid button::after {
+  content: ">";
+  margin-left: 5px; /* Adjust the spacing between the button text and the icon */
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  transform: translateY(-45px);
+}
+
+.image-section {
+  /* background-image: url(../img/dots.avif);
+  background-size: cover;
+  background-position: center; */
+  background-color: #FAF9F6;
+  display: flex;
+  align-items: flex-start; /* Align items to the start */
+}
+
+.image-section img {
+  margin-left: 45px;
+  max-width: 50%; /* Adjust the width of the image */
+}
+
+.image-section .text {
+  flex: 1; /* Grow to fill available space */
+  margin-left: 20px; /* Add some space between the image and text */
+  text-align: justify;
+}
+
+.image-section h2 {
+  margin-top: 0; /* Remove default margin */
+}
+
+.image-section .text p {
+  text-align-last: justify; /* Align the last line of the paragraph to the right */
+  margin-right: 250px;
+}
+
+.image-section .text p:last-child {
+  justify-content: flex-end;
+  text-align: left;
+}
+
+.image-section .text h2 {
+  font-weight: bold;
+}
+
+.image-section .text p {
+  color: #888;
+}
+
+.image-section .buttons {
+  margin-top: 20px; /* Add space between the text and buttons */
+}
+
+.image-section .buttons button {
+  padding: 10px 20px; /* Add padding to the buttons */
+  margin-right: 10px; /* Add space between the buttons */
+  background-color: orange; /* Set button background color */
+  color: #fff; /* Set button text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add border radius to create rounded corners */
+  cursor: pointer; /* Add cursor pointer on hover */
+}
+
+.image-section .buttons button:hover {
+  background-color: #0056b3; /* Change button background color on hover */
+}
+
+.contact-section {
+  background-color: orange;
+  color: white;
+  margin-left: 0; /* Remove any default margin */
+  padding-left: 45px; /* Add padding to the left */
+  height: 100px;
+  display: flex; /* Use flexbox */
+}
+
+.contact-section .text h2 {
+  margin-top: 350px;
+}
+
+.phone-section {
+  margin-left: 45px; /* Add margin to the left */
+}
+
+.phone-section p {
+  font-size: 16px; /* Set font size */
+  color: black; /* Set text color */
+}
+
+.form-section {
+  float: right;
+  margin-right: 700px;
+  width: 300px;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px; /* Add space between form groups */
+  display: flex;
+  align-items: center;
+}
+
+.form-group label {
+  display: block; 
+  font-weight: bold; 
+  width: 100px;
+  /* position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    padding: 10px;
+    transition: all 0.3s ease; */
+}
+
+.form-group input[type="text"] {
+  /* flex: 1; 
+  margin-left: 10px;  */
+  width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.form-group input[type="text"]:focus::placeholder,
+.form-group input[type="text"]:valid::placeholder {
+    color: transparent; /* Hide placeholder when input is focused or has value */
+}
+
+.form-group input[type="text"]:focus + label,
+.form-group input[type="text"]:valid + label {
+    top: -20px;
+    left: 0;
+    background-color: #fff;
+    font-size: 12px;
+    color: #888;
+}
+.form-group input[type="email"]{
+  width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.form-group input[type="email"]:focus::placeholder,
+.form-group input[type="email"]:valid::placeholder {
+    color: transparent; /* Hide placeholder when input is focused or has value */
+} 
+
+.form-group input[type="tel"]{
+  width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.form-group input[type="tel"]:focus::placeholder,
+.form-group input[type="tel"]:valid::placeholder {
+    color: transparent; /* Hide placeholder when input is focused or has value */
+}
+
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  appearance: none; /* Remove default arrow for some browsers */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6"><path fill="%23ccc" d="M6 6L0 0h12z"/></svg>'); /* Custom arrow icon */
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Adjust position of arrow icon */
+  background-size: 12px auto; /* Adjust size of arrow icon */
+}
+
+.form-group select:focus {
+  outline: none;
+}
+
+.form-group select::placeholder {
+  color: transparent; /* Hide placeholder when input is focused */
+}
+
+.form-group select::placeholder {
+  color: #ccc; /* Light gray color for placeholder text */
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+
+
+.form-group input[type="checkbox"] {
+  display: inline-block; /* Display checkbox inline */
+  vertical-align: middle; /* Align checkbox vertically */
+  margin-right: 10px; /* Add space to the right of checkbox */
+}
+
+.form-group button {
+  padding: 10px 20px; /* Add padding to button */
+  background-color: #007bff; /* Set button background color */
+  color: #fff; /* Set button text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add border radius to button */
+  cursor: pointer; /* Add cursor pointer on hover */
+}
+
+.form-group button:hover {
+  background-color: #0056b3; /* Change button background color on hover */
+}
+
+.contact-section::after,
+.phone-section::after,
+.form-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.form-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 600px;
+}
+
+.agreement-label {
+    color: #888; /* Light grey color */
+    font-size: 14px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add space below the agreement text */
+}
+
+.agreement-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.form-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+} 
+
+.name-group {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-bottom: 20px;
+}
+
+.name-group .form-group {
+  flex: 1; /* Make each form group take equal space */
+  margin-right: 10px; /* Adjust spacing between fields */
+}
+
+.name-group .form-group:last-child {
+  margin-right: 0; /* Remove margin from the last form group */
+}
+
+.contact-details-section {
+  text-align: center;
+  padding: 20px 0;
+  background-color: orange;
+}
+
+.contact-details-container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+}
+
+.contact-info {
+  padding: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.contact-info p i {
+  margin-right: 5px; /* Add spacing between icon and text */
+}
+
+.image-section {
+  position: relative;
+}
+
+.left-image, .right-image {
+  position: absolute;
+  top: 0;
+}
+
+.left-image {
+  left: 0;
+}
+
+.right-image {
+  right: 0;
+}
+
+.images-section {
+  position: relative;
+}
+
+.left-header {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  left: 490px; /* Adjust as needed */
+  color: black; /* Adjust text color */
+  font-size: 18px; /* Adjust font size */
+  border: none; /* Remove any border styling */
+  outline: none; /* Remove any outline styling */
+  background: none; /* Remove any background styling */
+  box-shadow: none; /* Remove any box shadow styling */
+  font-weight: bold; /* Adjust font weight */
+}
+
+.left-image, .right-image {
+  position: absolute;
+  top: 0;
+}
+
+.left-image {
+  left: 0;
+}
+
+.right-image {
+  right: 0;
+}
+
+.job-list {
+  list-style: none;
+  position: absolute;
+  top: calc(100% + 50px); /* Position the list below the Jobs header */
+  left: 490px; /* Adjust as needed */
+  padding: 0;
+}
+
+.job-list li {
+  color: black; /* Default text color */
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.job-list li:hover {
+  color: orange; /* Text color on hover */
+}
+
+.useful-links-header {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  left: 790px; /* Adjust as needed */
+  color: black; /* Adjust text color */
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold; /* Adjust font weight */
+  border: none; /* Remove any border styling */
+  outline: none; /* Remove any outline styling */
+  background: none; /* Remove any background styling */
+  box-shadow: none; /* Remove any box shadow styling */
+}
+
+.useful-links-list {
+  list-style: none;
+  position: absolute;
+  top: calc(100% + 50px); /* Position the list below the header */
+  left: 790px; /* Adjust as needed */
+  padding: 0;
+}
+
+.useful-links-list li {
+  color: black; /* Default text color */
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 10px; /* Add margin-bottom for spacing between list items */
+}
+
+.useful-links-list li:hover {
+  color: orange; /* Text color on hover */
+}
+
+.footer {
+  background-color: brown; /* Background color */
+  color: white; /* Text color */
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left a {
+  color: white; /* Link color */
+  text-decoration: none;
+  margin-right: 20px; /* Adjust spacing between links */
+}
+
+.footer-right {
+  font-size: 14px; /* Adjust font size */
+}
+
+.footer-center {
+  flex-grow: 1; /* Occupy remaining space */
+  text-align: center; /* Center align text */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
